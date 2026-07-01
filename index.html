@@ -651,7 +651,9 @@ async function enviar(){
     getSingle('cond_fisico'),
     restricaoSN,
     getMulti('interesse').join(', '),
-    val('obs')
+    val('obs'),
+    getMulti('vivencia').join(', '),
+    val('ocorrencia')
   ];
 
   // Se não há URL configurada, apenas mostra o resumo (modo visual)

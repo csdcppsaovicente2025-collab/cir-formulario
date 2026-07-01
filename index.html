@@ -246,7 +246,7 @@ body{
           <input type="text" data-req id="nome" placeholder="Nome e sobrenome" /></div>
       </div>
       <div class="field-group">
-        <div class="field required"><label>Matrícula / RE</label>
+        <div class="field required"><label>RS</label>
           <input type="text" data-req id="matricula" placeholder="000000" /></div>
         <div class="field"><label>Posto / Função atual</label>
           <input type="text" id="funcao" placeholder="Ex: Policial Penal" /></div>
@@ -623,7 +623,7 @@ async function enviar(){
   });
 
   const dados={
-    ident:{Nome:val('nome'),'Matrícula':val('matricula'),'Função':val('funcao'),Tempo:val('tempo'),Unidade:val('unidade'),Idade:val('idade'),Contato:val('contato')},
+    ident:{Nome:val('nome'),'RS':val('matricula'),'Função':val('funcao'),Tempo:val('tempo'),Unidade:val('unidade'),Idade:val('idade'),Contato:val('contato')},
     historico:{'Experiência anterior':getMulti('historico').join(', ')||'—',Cursos:val('cursos')||'—','Curso tático':getSingle('curso_tatico')||'—'},
     vivencia:{'Situações':getMulti('vivencia').join(', ')||'—','Ocorrência relevante':val('ocorrencia')||'—'},
     comps,
